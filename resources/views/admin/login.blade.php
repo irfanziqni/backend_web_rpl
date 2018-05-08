@@ -9,6 +9,14 @@
             Login
           </div>
           <div class="card-body">
+            @if ($errors->all())
+                <span class="help-block">
+                  @foreach ($errors->all() as $key)
+                    <strong>{{ $key }}</strong>
+
+                  @endforeach
+                </span>
+            @endif
             <form action="{{ route('login') }}" method="post">
               {{ csrf_field() }}
               <fieldset class="form-group">
