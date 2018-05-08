@@ -1,0 +1,24 @@
+body{
+  min-height: inherit;
+}
+.sidebar{
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+  background-color: rgb(193, 67, 5);
+}
+.sidebar a.nav-link{
+  color: white;
+  transition: 0.3s;
+}
+
+.sidebar a.nav-link:hover{
+  color: lightgrey;
+  padding-left: 10%;
+}
